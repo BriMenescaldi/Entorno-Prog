@@ -27,5 +27,9 @@ done
 #columna la palabra
 
 #debemos ordenar las palabras de mayor aparición a menor aparición
-
-sort -g archivo_temporal 
+ 
+sort -g archivo_temporal.txt > orden.txt #lo ordenada de menor a mayor según el nùmero
+ cat orden.txt | uniq > ordenlisto.txt #eliminan las que están líneas que están repetidas
+ sort -r ordenlisto.txt > ordenalreves.txt #sort -r ordena al revés
+ head ordenalreves.txt #head muestra las primeras 10 líneas
+ rm archivo_temporal.txt #eliminamos el temporal para que cuando lo volvamos a ejecutar este limpio

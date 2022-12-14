@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#Indicador estadístico de longitud de palabras (la más corta, la más larga y el
+#promedio de longitud).
+
 larga=0
 corta=189819 #cantidad de palabras de la palabra más larga que existe
 promedio=0
@@ -29,4 +32,4 @@ echo "La palabra más corta tiene "$corta "letras."
 echo "En promedio las palabras tienen "$promedio "letras."
 
 
-  
+
