@@ -13,7 +13,7 @@ longitud_palabra=0
 for word in $(cat $1);
   do 
     longitud_palabra=${#word} #para guardar la longitud de la palabra 
-    if [[ $longitud_palabra -lt  $corta ]
+    if [[ $longitud_palabra -lt  $corta ]]
     then 
     corta=$longitud_palabra
     fi

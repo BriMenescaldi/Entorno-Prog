@@ -4,7 +4,7 @@
 #promedio de longitud).
 
 cantidad_letras=0
-cantidad_oraciones=0
+cantidad_oraciones=1
 longitud_minima=1000
 longitud_maxima=0
 suma_longitud=0
@@ -26,4 +26,4 @@ do
 
    echo La oración más corta tiene $longitud_minima letras
    echo La oración más larga tiene $longitud_maxima letras
-   echo El promedio de longitud de oraciones es $((suma_longitud/cantidad_oraciones))
+   echo El promedio de longitud de oraciones es $(( suma_longitud / cantidad_oraciones ))

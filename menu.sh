@@ -1,13 +1,7 @@
 #!/bin/bash
 
-source statsWords.sh
-source statsUsageWords.sh
-source findNames.sh
-source statsSentences.sh
-source blankLinesCounter.sh
-
 TEXTO=texto.txt
-
+echo Bandera3
 PS3='>> '
 echo "Elija una opción"
 select opcion in "Palabras" "Uso_de_palabras" "Nombres" "Oraciones" "Lineas_en_blanco" "SALIR"
@@ -17,11 +11,11 @@ do
 	echo "Usted esta viendo estadísticas sobre " $opcion
 	
 	case $REPLY in 
-	  1) statsWords $TEXTO;;
-	  2) statsUsageWords $TEXTO;;
-	  3) findNames $TEXTO;;
-	  4) statsSentences $TEXTO;;
-	  5) blankLinesCounter $TEXTO;;
+	  1) ./statsWords.sh $TEXTO;;
+	  2) ./statsUsageWords.sh $TEXTO;;
+	  3) ./findNames.sh $TEXTO;;
+	  4) ./statsSentences.sh $TEXTO;;
+	  5) ./blankLinesCounter.sh $TEXTO;;
 	esac
 done
 
