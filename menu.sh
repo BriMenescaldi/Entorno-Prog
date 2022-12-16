@@ -1,13 +1,13 @@
 #!/bin/bash
 
 TEXTO=texto.txt
-echo Bandera3
+
 PS3='>> '
 echo "Elija una opción"
 select opcion in "Palabras" "Uso_de_palabras" "Nombres" "Oraciones" "Lineas_en_blanco" "SALIR"
 do
 	[ -e $opcion ] && echo "Elija una opción válida" && continue
-	[ $REPLY == 6 ] && echo "Hasta luego, vuelva prontos" && break
+	[ $REPLY == 6 ] && echo "Hasta luego, vuelva pronto!" && break
 	echo "Usted esta viendo estadísticas sobre " $opcion
 	
 	case $REPLY in 
